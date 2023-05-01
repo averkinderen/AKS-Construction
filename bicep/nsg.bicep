@@ -21,7 +21,7 @@ resource ruleAppGwManagement 'Microsoft.Network/networkSecurityGroups/securityRu
     protocol: '*'
     sourcePortRange: '*'
     destinationPortRange: ruleInGwManagementPort
-    sourceAddressPrefix: 'GatewayManager'
+    sourceAddressPrefix: '*'
     destinationAddressPrefix: '*'
     access: 'Allow'
     priority: 110
